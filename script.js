@@ -1,6 +1,7 @@
 console.log('test');
 
 document.querySelector('button').addEventListener('click', giveWeather);
+var but = document.querySelector('button');
 
 function giveWeather() {
     console.log('its working');
@@ -130,6 +131,11 @@ function giveWeather() {
         document.getElementById('weather').innerHTML = output;
             
         }
+        if(but.value === "off") {
+            but.value = "on";
+        }
+    } else {
+        but.value = "off";
     }
 
     xhr.send();
