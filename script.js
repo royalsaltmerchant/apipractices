@@ -131,14 +131,14 @@ function giveWeather() {
         document.getElementById('weather').innerHTML = output;
             
         }
-        if(but.value === "off") {
-            but.value = "on";
-        }
-    } else if{
-        but.value = "off";
-        console.log(but.value);
-        
     }
 
     xhr.send();
+
+    if(but.value === "off") {
+        but.value = "on";
+    } else {
+        but.value = "off";
+        document.getElementById('weather').innerHTML = '';
+    }
 }
