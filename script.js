@@ -128,17 +128,8 @@ function giveWeather() {
             '</li>' +
             '</ul>'
 
-        document.getElementById('weather').innerHTML = output;
-            
+            document.getElementById('weather').innerHTML = output;  
         }
     }
-
     xhr.send();
-
-    if(but.value === "off") {
-        but.value = "on";
-    } else {
-        but.value = "off";
-        document.getElementById('weather').innerHTML = '';
-    }
 }
