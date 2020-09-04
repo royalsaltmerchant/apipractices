@@ -134,8 +134,10 @@ function giveWeather() {
         if(but.value === "off") {
             but.value = "on";
         }
-    } else {
+    } else if{
         but.value = "off";
+        console.log(but.value);
+        
     }
 
     xhr.send();
